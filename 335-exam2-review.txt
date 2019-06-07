@@ -1,0 +1,47 @@
+brute force
+avl trees
+sequential search
+closest pairs
+3-color graph pbm
+knapsack pbm
+anything from the first 5 wks (check exam 1)
+assignment pbm
+breadth-first vs depth-first search
+algorithm qualities
+kinds of graphs
+kinds of prbms
+analysis framing - give analysis of some type of algorithm (what's Big-O?)
+merge sort
+topological sort
+<no shell sort :)>
+generating permutations
+fast merge-sort
+memorize the powers of 2 from 0 to 12 (1 to 4096)
+15-puzzle
+parody check
+russian-peasant multiplication? (halve one number, double the other)
+binary search
+Josephus Prbm (one-two(leave circle)-one-two(leave circle)-...-only one survivor)
+Master Thrm 
+	-T(N) = A * T(N/B) + O(N^D)
+	-O(N) = O(N^1)
+	-O(1) = O(N^0)
+	-. < .		N^D
+	-A = B^D	N^D * log(N)
+	-. > .		N^WEIRD
+Quick Sort - Running Time? How Many Passes?
+<no mapping the 15-sum game>
+heap sort - excessive and just like balance trees
+Horner's Rule (check quiz #2)
+Horspool's String Matching
+Hashing - compute hash key value, display table, what happens in collisions?, open-addressing (stride length)
+Bucket Chaining
+<no open hashing & closed hashing>
+Hash Issues (randominess of the table)
+<no B-Trees>
+Dynamic Programming - Coin Collecting Example
+Pre-wash
+Warshall's Algorithm ~ Flloyd's Algorithm
+<no landscapes>
+Minimum-Spanning Trees - Prim's Algorithm ~ Dijisktra's Algorithm
+Huffmans

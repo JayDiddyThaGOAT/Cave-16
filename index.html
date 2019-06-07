@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head><title> JVJ: Cave-16</title></head>
+<link rel="stylesheet" href="styles.css">
+<body>
+<h1>JVJ: Cave-16</h1>
+<canvas id="cave" width="1200px" height="800px"></canvas>
+</body>
+<script src="room.js"></script>
+<script src="cave.js"></script>
+<script>
+var canvas = document.getElementById("cave");
+var context = canvas.getContext("2d");
+var FONT_SIZE = 30;
+
+var cave = new Cave(16, 0, 0);
+cave.searchRoom(8, 1, 7);
+
+for (var i = 0; i < cave.path.length; i++)
+{
+	var room = cave.path[i];
+
+	if (i == 0)
+	{
+		context.font = "Bold " + FONT_SIZE + "px Comic Sans MS";
+		context.fillStyle = "#FF0000";
+		context.fillText("Cave Mouth: " + room, FONT_SIZE * i, FONT_SIZE * (i + 1));
+	}
+	else if(i == cave.path.length - 1)
+	{
+		context.font = "Bold " + FONT_SIZE + "px Comic Sans MS";
+		context.fillStyle = "#008000";
+		context.fillText("->\tDestination: " + room, FONT_SIZE * i, FONT_SIZE * (i + 1));
+	}
+	else
+	{
+		context.font = FONT_SIZE + "px Comic Sans MS";
+		context.fillStyle = "#000000";
+		context.fillText("->\tRoom: " + room, FONT_SIZE * i, FONT_SIZE * (i + 1));
+	}
+	
+}
+
+</script>
+
+
+
+</html>
